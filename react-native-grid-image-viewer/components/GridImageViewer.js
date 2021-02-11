@@ -33,7 +33,7 @@ const GridImageView = ({ data }) => {
                 transparent={true}
                 visible={modal.visible}
                 onRequestClose={() => {
-                    Alert.alert("Modal has been closed.");
+                    setModal({ visible: false, data: 0 });
                 }}>
 
                 <Component />
